@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activity.ActivityInfor"
+        android:weightSum="2">
+    <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBlueLight">
+
+        <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="50sp"
+                android:layout_centerInParent="true"
+        >
+            <ImageView
+                    android:id="@+id/imageViewThongTin"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/doctordong"
+            />
+
+            <TextView
+                    android:id="@+id/textViewTenThongTinNho"
+                    android:layout_width="wrap_content"
+                    android:text="DoctorDong"
+                    android:textSize="17sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@id/imageViewThongTin"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/textViewMoTa"
+                    android:layout_width="wrap_content"
+                    android:text="Vay nhanh chóng hiệu quả, giải ngân trong ngày"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:layout_toRightOf="@id/imageViewThongTin"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_below="@id/textViewTenThongTinNho"
+                    android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <TextView
+                android:id="@+id/textViewDanhGia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_star"
+                android:drawablePadding="10sp"
+                android:textSize="16sp"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:paddingTop="5sp"
+                android:layout_marginLeft="10sp"
+                android:paddingBottom="5sp"
+                android:textColor="@color/colorWhite"
+                android:layout_toRightOf="@+id/textViewTenThongTin"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20sp"/>
+
+        <TextView
+                android:id="@+id/textViewTenThongTin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="DoctorDong"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20sp"
+        />
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite">
+
+        <TextView
+                android:id="@+id/textViewChiTiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorBlueLight"
+                android:layout_margin="20sp"/>
+
+        <Button
+                android:id="@+id/buttonDangKy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đăng Ký Vay"
+                android:textAllCaps="true"
+                android:background="@drawable/bg_button_regis"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:textSize="17sp"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20sp"/>
+    </RelativeLayout>
+</LinearLayout>
