@@ -27,8 +27,8 @@ import java.util.*
 import kotlin.concurrent.schedule
 
 class MainActivity : AppCompatActivity() {
-    private final val URL1 = "https://ungdungvaytien.000webhostapp.com/"
-    private final val URL2 = "https://ungdungvaytien.000webhostapp.com/"
+    private val URL1 = "https://ungdungvaytien.000webhostapp.com/"
+    private val URL2 = "https://ungdungvaytien.000webhostapp.com/"
 
     private lateinit var dialogLoad: Dialog
     private lateinit var composite: CompositeDisposable
@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        var connectionReceiver: ConnectionReceiver = ConnectionReceiver()
+        val connectionReceiver = ConnectionReceiver()
         recyclerView.layoutManager = LinearLayoutManager(this)
         if (connectionReceiver.isConnected(this)) {
             initData1()
