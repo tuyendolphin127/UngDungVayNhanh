@@ -6,9 +6,10 @@ import ungdung.vaynhanh.Models.ThongTin
 
 interface RequestApi {
 
-    @GET("/apiThongTin.php")
+    @GET("apiThongTin.php")
     fun getDanhSachThongTin1(): Observable<List<ThongTin>>
 
-    @GET("/apiThongTin.php")
+    //Đây cũng thế, nếu domain có
+    @GET("apiThongTin.php")
     fun getDanhSachThongTin2(): Observable<List<ThongTin>>
 }

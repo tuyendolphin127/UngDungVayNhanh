@@ -27,9 +27,8 @@ import java.util.*
 import kotlin.concurrent.schedule
 
 class MainActivity : AppCompatActivity() {
-    private val URL1 = "https://ungdungvaytien.000webhostapp.com/"
-    private val URL2 = "https://ungdungvaytien.000webhostapp.com/"
-
+    private val URL1 = "http://nganhangtindung.com/wp-content/uploads/2019/08/"
+    private val URL2 = "http://nganhangtindung.com/wp-content/uploads/2019/08/"
     private lateinit var dialogLoad: Dialog
     private lateinit var composite: CompositeDisposable
     private val DATABASE_NAME: String = "DanhSachThongTin"
